@@ -43,14 +43,12 @@
 			cl = jQuery('[name="class_ber1"]');
 			dtStart = jQuery('[name="date"]');
 			dtEnd = jQuery('[name="datum_ende"]');
+			console.log('inputs', cl, dtStart, dtEnd);
 			
-			cl.on('change', function () {
+			jQuery('body').on('change', '[name="class_ber1"]', function () {
 				updateResults();
 			});
-			dtStart.on('keyup', function () {
-				updateResults();
-			});
-			dtEnd.on('keyup', function () {
+			jQuery('body').on('keyup', '[name="date"], [name="datum_ende"]', function () {
 				updateResults();
 			});
 		}
