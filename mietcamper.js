@@ -28,9 +28,30 @@
 				jsonpCallback: "callback_mietcamper",
 				dataType: "jsonp",
 				success: function( response ) {
-					console.log( response );
+					setupMietcamperForm(response);
 				}
 			});
 		});
+		var data = [], cl, dtStart, dtEnd;
+		function updateResults() {
+			console.log("Results: ", cl.val(), dtStart.val(), dtEnd.val());
+		}
+		function setupMietcamperForm(response) {
+			data = response;
+			
+			cl = jQuery("[name=class_ber1]");
+			dtStart = jQuery("[name=date]");
+			dtEnd = jQuery("[name=datum_ende]");
+			
+			cl.on('keyup', function () {
+				updateResults();
+			});
+			dtStart.on('keyup', function () {
+				updateResults();
+			});
+			dtEnd.on('keyup', function () {
+				updateResults();
+			});
+		}
     });
 })();
