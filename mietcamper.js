@@ -22,7 +22,7 @@
     loadScript("https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js", function () {
         jQuery.noConflict();
 		(function( $ ) {
-			$(document)ready(function() {
+			$(document).ready(function() {
 				console.log('jquery loaded');
 				$.ajax({
 					url: "https://rawgit.com/ruslancer/mietcamper/master/mietcamper_jsonp.js",
