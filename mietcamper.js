@@ -1,7 +1,7 @@
 //cdn.rawgit.com
 //rawgit.com
 (function () {
-    function loadScript(url, callback) {
+    function loadScriptJquery(url, callback) {
         var script = document.createElement("script")
         script.type = "text/javascript";
         if (script.readyState) { //IE
@@ -17,9 +17,9 @@
             };
         }
         script.src = url;
-        document.getElementsByTagName("head")[0].appendChild(script);
+        document.getElementsByTagName("body")[0].appendChild(script);
     }
-    loadScript("https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js", function () {
+    loadScriptJquery("https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js", function () {
         jQuery.noConflict();
 		jQuery(document).ready(function() {
 			console.log('jquery loaded');
