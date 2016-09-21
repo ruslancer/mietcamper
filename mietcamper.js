@@ -19,6 +19,9 @@
     }
     loadScript("https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js", function () {
          //jQuery loaded
-         console.log('jquery loaded');
+		 $.noConflict();
+		 jQuery( document ).ready(function( $ ) {
+			console.log('jquery loaded');
+		 });
     });
 })();
