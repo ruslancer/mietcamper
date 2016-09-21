@@ -43,7 +43,7 @@
 			dtStart = jQuery("[name=date]");
 			dtEnd = jQuery("[name=datum_ende]");
 			
-			cl.on('keyup', function () {
+			cl.on('change', function () {
 				updateResults();
 			});
 			dtStart.on('keyup', function () {
