@@ -25,7 +25,7 @@
 			console.log('jquery loaded');
 			jQuery.ajax({
 				url: "https://rawgit.com/ruslancer/mietcamper/master/mietcamper_jsonp.js",
-				jsonp: "callback_mietcamper",
+				jsonpCallback: "callback_mietcamper",
 				dataType: "jsonp",
 				success: function( response ) {
 					console.log( response );
