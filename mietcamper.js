@@ -20,6 +20,8 @@
         document.getElementsByTagName("body")[0].appendChild(script);
     }
     loadScriptJquery("https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js", function () {
+		var data = [], cl, dtStart, dtEnd;
+		
         jQuery.noConflict();
 		jQuery(document).ready(function() {
 			console.log('jquery loaded');
@@ -32,16 +34,15 @@
 				}
 			});
 		});
-		var data = [], cl, dtStart, dtEnd;
 		function updateResults() {
 			console.log("Results: ", cl.val(), dtStart.val(), dtEnd.val());
 		}
 		function setupMietcamperForm(response) {
 			data = response;
 			
-			cl = jQuery("[name=class_ber1]");
-			dtStart = jQuery("[name=date]");
-			dtEnd = jQuery("[name=datum_ende]");
+			cl = jQuery('[name="class_ber1"]');
+			dtStart = jQuery('[name="date"]');
+			dtEnd = jQuery('[name="datum_ende"]');
 			
 			cl.on('change', function () {
 				updateResults();
