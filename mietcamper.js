@@ -18,10 +18,13 @@
         document.getElementsByTagName("head")[0].appendChild(script);
     }
     loadScript("https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js", function () {
-         //jQuery loaded
-		 $.noConflict();
-		 jQuery( document ).ready(function( $ ) {
+        //jQuery loaded
+		jQuery.noConflict();
+		(function( $ ) {
+		  $(function() {
+			// More code using $ as alias to jQuery
 			console.log('jquery loaded');
-		 });
+		  });
+		})(jQuery);
     });
 })();
