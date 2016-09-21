@@ -40,7 +40,7 @@ callback_mietcamper({
 				'22.06.2017 - 29.08.2017'				
 			],
 			value: {
-				'ab1Tag': 95, 'ab1Wo': 93, 'ab2Wo': 91
+				'ab1Tag': 95, 'ab2Wo': 93, 'ab3Wo': 91
 			}
 		}	
 	],
@@ -85,7 +85,7 @@ callback_mietcamper({
 				'22.06.2017 - 29.08.2017'				
 			],
 			value: {
-				'ab1Tag': 105, 'ab1Wo': 103, 'ab2Wo': 101
+				'ab1Tag': 105, 'ab2Wo': 103, 'ab3Wo': 101
 			}
 		}	
 	],
@@ -130,7 +130,7 @@ callback_mietcamper({
 				'22.06.2017 - 29.08.2017'	
 			],
 			value: {
-				'ab1Tag': 116, 'ab1Wo': 114, 'ab2Wo': 112
+				'ab1Tag': 116, 'ab2Wo': 114, 'ab3Wo': 112
 			}
 		}		
 	],
@@ -175,7 +175,7 @@ callback_mietcamper({
 				'22.06.2017 - 29.08.2017'				
 			],
 			value: {
-				'ab1Tag': 126, 'ab1Wo': 124, 'ab2Wo': 122
+				'ab1Tag': 126, 'ab2Wo': 124, 'ab3Wo': 122
 			}
 		}		
 	]
