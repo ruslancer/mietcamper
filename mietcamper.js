@@ -21,7 +21,7 @@
         //jQuery loaded
 		jQuery.noConflict();
 		(function( $ ) {
-		  $(function() {
+		  $(document)ready(function() {
 			// More code using $ as alias to jQuery
 			console.log('jquery loaded');
 		  });
