@@ -21,18 +21,16 @@
     }
     loadScript("https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js", function () {
         jQuery.noConflict();
-		(function( $ ) {
-			$(document).ready(function() {
-				console.log('jquery loaded');
-				$.ajax({
-					url: "https://rawgit.com/ruslancer/mietcamper/master/mietcamper_jsonp.js",
-					jsonp: "callback_mietcamper",
-					dataType: "jsonp",
-					success: function( response ) {
-						console.log( response );
-					}
-				});
+		jQuery(document).ready(function() {
+			console.log('jquery loaded');
+			jQuery.ajax({
+				url: "https://rawgit.com/ruslancer/mietcamper/master/mietcamper_jsonp.js",
+				jsonp: "callback_mietcamper",
+				dataType: "jsonp",
+				success: function( response ) {
+					console.log( response );
+				}
 			});
-		})(jQuery);
+		});
     });
 })();
