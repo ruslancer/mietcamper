@@ -1,4 +1,4 @@
-callback({
+callback_mietcamper({
 	'1': [
 		{	
 			range: [
@@ -179,4 +179,4 @@ callback({
 			}
 		}		
 	]
-})
+});
